@@ -1,0 +1,27 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* Fonts: Playfair Display + Montserrat via Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Montserrat:wght@300;400;500;600&family=Playfair+Display:wght@500;600;700&display=swap');
+
+:root {
+  --glass-bg: rgba(255,255,255,0.08);
+  --glass-border: rgba(255,255,255,0.35);
+}
+
+html, body, #__next {
+  height: 100%;
+  background: #0f0f0f;
+}
+
+.section {
+  scroll-margin-top: 100px;
+}
+
+/* Simple parallax helper */
+.parallax {
+  background-attachment: fixed;
+  background-position: center;
+  background-size: cover;
+}
